@@ -507,6 +507,31 @@ p,.tagline,h1,.section-title{
     text-align: center;
     position: grid;
 }
+.video-section{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.video-wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.video-wrapper iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    z-index: 1;
+}
 
 .counter-container{
     color: white;
@@ -572,4 +597,5 @@ p,.tagline,h1,.section-title{
         padding: 0.5em 1em;
     }
 }
+
 
